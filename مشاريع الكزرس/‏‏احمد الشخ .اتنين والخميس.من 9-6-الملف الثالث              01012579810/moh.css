@@ -1,0 +1,385 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  background: #f7f7f9;
+  color: #222;
+}
+
+/* Header */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #2d2f48;
+  color: #fff;
+  padding: 15px 40px;
+}
+header .logo {
+  font-weight: bold;
+  font-size: 22px;
+}
+header nav a {
+  color: #fff;
+  margin-left: 20px;
+  text-decoration: none;
+}
+header nav a:hover {
+  text-decoration: underline;
+}
+
+/* Product Section */
+.product-hero {
+  position: relative;
+  display: flex;
+  align-items: center;
+  padding: 50px;
+  background: #fff;
+  overflow: hidden;
+}
+.product-hero img {
+  width: 45%;
+  border-radius: 10px;
+}
+.product-info {
+  margin-left: 40px;
+}
+.product-info h1 {
+font-size: 48px;
+  margin-bottom: 10px;
+
+}
+.buttons button {
+  background: #6a4dfa;
+  color: white;
+  border: none;
+  padding: 15px 200px;
+  margin: 8px;
+
+  cursor: pointer;
+  
+}
+button:hover
+
+.reviews {
+  background: #fff;
+  padding: 50px;
+}
+.reviews h2 {
+  text-align: center;
+}
+.rating-summary {
+  text-align: center;
+  margin-bottom: 30px;
+}
+.rating-number {
+  font-size: 48px;
+  color: #6a4dfa;
+}
+.stars {
+  font-size: 24px;
+  color: gold;
+}
+.review {
+  display: flex;
+  align-items: center;
+  margin: 20px 0;
+}
+.review img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  margin-right: 20px;
+}
+
+/* Accessories */
+.accessories {
+  background: #f0f0f5;
+  padding: 50px;
+}
+.accessories h2 {
+  text-align: center;
+}
+.items {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.item {
+  background: #fff;
+  padding: 20px;
+  width: 22%;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+.item img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 6px;
+}
+.item button {
+  margin-top: 10px;
+  background: #6a4dfa;
+  color: white;
+  border: none;
+  padding: 8px 15px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+.item button:hover {
+  background: #5339cc;
+}
+
+/* Footer */
+footer {
+  background: #2d2f48;
+  color: white;
+  padding: 40px;
+}
+.footer-columns {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+.footer-columns h3 {
+  margin-bottom: 10px;
+}
+.footer-columns a {
+  display: block;
+  color: #ccc;
+  text-decoration: none;
+  margin-bottom: 5px;
+}
+.footer-columns a:hover {
+  color: white;
+}
+.footer-bottom {
+  border-top: 1px solid #444;
+  padding-top: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.socials img {
+  width: 40px;
+  margin-left: 10px;
+}
+
+.discount-badge {
+  position: absolute;
+  top: 82px;
+  left: 82px;         /* فوق الشمال */
+  z-index: 50;        /* رقم عالي يضمن الظهور فوق الصورة */
+  background-color: #8e44ad; /* بنفسجي */
+  color: #fff;
+  padding: 6px 12px;
+  border-radius: 8px;
+  font-weight: 700;
+  box-shadow: 0 4px 10px rgba(158, 46, 46, 0.15);
+  font-size: 14px;
+}
+.top-links {
+  display: flex;
+  justify-content: center; /* يخليهم في النص */
+  align-items: center;
+  gap: 10px; /* مسافة بين كل كلمة */
+  position: absolute;
+  top: 0px; /* المسافة من فوق */
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.link-item {
+  font-size: 14px;
+  font-weight: 600;
+  padding: 6px 14px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+
+
+.product-info {
+  position: relative;
+  text-align: center;
+  margin-top: 0px; /* مسافة من فوق */
+}
+
+.link-item {
+  display: inline-block;
+  font-size: 14px;
+  font-weight: 600;
+  padding: 5px 14px;
+  border-radius: 4px;
+  margin: 3px 20px; /* مسافة صغيرة بين كل كلمة */
+}
+
+/* New */
+.link-item.special {
+
+   background-color: #8594e9;
+  border: 1px solid #ccc;
+  color: white;
+  border-radius: 30px;
+}
+
+/* -12% Off */
+.link-item.sale {
+  background-color: #8594e9; /* البنفسجي اللي في الصورة */
+  color: white;
+  border-radius: 30px;
+  
+}
+
+/* Best Seller */
+.link-item.contact {
+  background-color: #8594e9;
+  border: 1px solid #ccc;
+  color: white;
+  border-radius: 30px;
+}
+
+/* نضيف شوية مسافة بين الكلمات والعنوان */
+.product-info h1 {
+  margin-top: 20px;
+  font-size: 48px;
+  font-weight: 700;
+}
+.aa{color: #564ce0;}
+.price-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.price {
+  font-size: 22px;
+  font-weight: bold;
+  color: #080808;
+  margin: 0;
+}
+
+.old-price {
+  color: #888;
+  text-decoration: line-through;
+  font-size: 16px;
+  margin-left: 6px;
+}
+
+.save-box {
+  background-color: #c53b3b70;
+  color: #d63030;
+  font-size: 13px;
+  font-weight: bold;
+  padding: 4px 8px;
+  border-radius: 5px;
+} 
+.buttons button.a {
+  margin: 30px 100px 5px 100px;
+  text-decoration: none;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 700;
+  background-color: #854ce2;
+}
+.buttons button.c {
+  background-color: rgb(253, 252, 252);
+  text-decoration: none;
+  color: black;
+  font-size: 16px;
+  font-weight: 700;
+  border: 2px solid black;
+}
+span{
+  color: #8a57e9;
+  
+  font-weight: 700;
+}
+table {
+  width: 100%;
+  border-collapse: collapse;
+  border-spacing: 0 10px;
+}
+
+th, td {
+  padding: 15px;
+  text-align: center;
+  font-size: 14px;
+}
+
+.subtitle {
+  font-size: 12px;
+  color: #11111149;
+}
+
+tr {
+  box-shadow: 0 2px 6px rgba(24, 23, 23, 0.1);
+}
+
+/* العمود الأول */
+th:first-child,
+td:first-child {
+  background-color: #f5f5f5;
+  text-align: left;
+  font-weight: bold;
+  border-top-left-radius: 0px;
+  border-bottom-left-radius: 0px;
+}
+
+/* العمود الثاني */
+th:nth-child(2),
+td:nth-child(2) {
+  background-color: #2a07b81f;
+  color: #181717;
+  font-weight: bold;
+}
+
+/* حواف للعمود الثاني في أول وآخر صف */
+tr:first-child th:nth-child(2) {
+  border-top-right-radius: 5px;
+  border-top-left-radius: 5px;
+}
+tr:last-child td:nth-child(2) {
+  border-bottom-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+}
+
+/* الأعمدة الأخرى */
+th:nth-child(n+3),
+td:nth-child(n+3) {
+  background-color: #f5f5f5 ;
+  color: #333;
+}
+
+.price {
+  font-weight: bold;
+  font-size: 16px;
+  color: #8f87e45d;
+}
+
+/* صف التقييم */
+.rating-row td {
+  font-size: 16px;
+}
+
+
+table {
+  border-collapse: collapse;
+  width: 60%;
+  margin: 20px auto;
+}
+
+th, td {
+  padding: 10px;
+  text-align: center;
+}
+
+.badge {
+  background-color: #3b3bc596;
+  color: #eee3e3;
+  padding: 4px 10px;
+  border-radius: 20px;
+  display: inline-block;
+  font-size: 14px;
+}

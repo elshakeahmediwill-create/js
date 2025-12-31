@@ -1,0 +1,299 @@
+#one-icon{
+  border-radius: 50px;
+  max-width: 50px;
+  padding: 15px;
+  background-color: rgb(245, 101, 44);
+  color:white;
+}
+body{
+  background-color: rgb(250, 242, 231);
+}
+
+.navbar{
+  background-color: white;
+  box-shadow: 2px 2px rgb(230, 228, 228);
+  position: relative;
+}
+.nav-left{
+  width: 1100px ;
+}
+.navbar h3{
+position:absolute;
+left: 370px;
+bottom: 50px;
+font-weight: 700;
+}
+.navbar p{
+  position: relative;
+  left: 70px;
+bottom: 15px;
+}
+.img1{
+  width: 40px ;
+  height: 40px;
+  border-radius: 50px;
+  border: 2px solid   rgb(245, 101, 44);
+}
+
+.tow-icon:hover{
+  color: rgb(245, 101, 44) ;
+}
+.recipe-card {
+  background: white;
+  height: 750px;
+}
+
+/* IMAGE */
+.image-section{
+  position: relative;
+  min-height: 420px;
+  min-width: 550px;
+}
+#row1{
+  width: 90%;
+  border-radius: 20px !important;;
+}
+/* TOP ICONS */
+
+
+
+/* RATING */
+.rating {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  background: white;
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-size: 14px;
+}
+
+/* INFO BAR */
+.info-bar {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: white;
+  display: flex;
+  align-items: center;
+  width: 90%;
+  height: 100px;
+  padding: 10px;
+  border-radius: 15px;
+  font-size: 14px;
+}
+.info-bar .icon4{
+margin-left: 80px;
+color: #ff7a00;
+}
+.info-bar .ic2{
+  color: red;
+}
+.info-bar .ic3{
+  color: blue;
+  
+}
+
+.info-bar b{
+  margin-left: 70px;
+}
+
+/* TABS */
+.tab-pane {
+ 
+  position: relative;
+}
+
+
+
+/* INGREDIENTS LIST */
+.ingredients-list {
+  list-style: none;
+  padding: 20px;
+  background: #fff6e5;
+  border-radius: 15px;
+  counter-reset: item;
+}
+
+.ingredients-list li {
+  counter-increment: item;
+  display: flex;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+.ingredients-list li::before {
+  content: counter(item);
+  background: #ff7a00;
+  color: white;
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 10px;
+  font-size: 14px;
+}
+
+.namber li {
+  counter-increment: item;
+  display: flex;
+  align-items: center;
+  margin-bottom: 32px;
+}
+.namber li::before {
+  content: counter(item);
+  background: #ff7a00;
+  color: white;
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 10px;
+  font-size: 14px;
+}
+
+.rating i{
+  color:rgb(255, 208, 0);
+}
+#icon-right, #icon-right-1{
+  background-color: #fadcc1;
+  width: 40px;
+  height: 40px;
+  color: #f76300;
+  margin-left: 5px;
+  border-radius: 10px;
+  padding-top: 10px;
+} 
+#icon-right:hover, #icon-right-1:hover{
+  background-color: #fabe86;
+}
+
+.btn-r{
+    background: linear-gradient(45deg, #f09875, #f35c20, #ff3300);
+     transition: transform 0.2s ease;
+     border-radius: 10px;
+     color: white;
+     padding: 10px;
+}
+.btn-r:hover{
+   background: linear-gradient(45deg, #ff3300);
+   transform: scale(1.04);
+   color: white;
+
+}
+.do{
+  background-color: #e0dcd949;
+  width:355px;
+  margin-bottom: 20px;
+  padding: 15px;
+  border-radius: 10px;
+}
+.gr{
+ background-color: #e0dcd949;
+width: 355px;
+position: absolute;
+padding: 15px;
+border-radius: 10px;
+
+}
+.no1{
+right: 0;
+top: 0;
+
+}
+.no2{
+right: 0;
+top: 95px;
+
+}
+.no3{
+right: 0;
+top: 190px;
+
+}
+.row .tab-pane h5{
+  display: inline;
+  font-size: 20px;
+  position: relative;
+  left: 100px;
+}
+.i1{background-color:#f7dfc4;
+  padding: 15px;
+border-radius: 10px;
+padding-right: 25px;
+color:#f76300;
+
+}
+.i2{background-color:#f7f6c4;
+  padding: 15px;
+border-radius: 10px;
+padding-right: 25px;
+color:#916033;
+
+}
+.i3{background-color:#b8f8d252;
+  padding: 15px;
+border-radius: 10px;
+padding-right: 25px;
+color:#0e9254;
+
+}
+.i4{background-color:#c4e3f775;
+  padding: 15px;
+border-radius: 10px;
+padding-right: 25px;
+color:#1970d3;
+
+}
+.i5{background-color:#f7c4c47c;
+  padding: 15px;
+border-radius: 10px;
+padding-right: 25px;
+color:#da2c2c;
+
+}
+.i6{background-color:#f7c4e279;
+  padding: 15px;
+border-radius: 10px;
+padding-right: 25px;
+color:#d147d6;
+}
+.div1{
+  background-color: #fcb354;
+  width: 600px;
+  height: 80px;
+  border-radius: 15px;
+  margin-bottom: 15px;
+}
+.div2{
+  background-color: #fffaeb;
+  width: 600px;
+  height: 80px;
+  border-radius: 15px;
+  margin-left: 5px;
+ 
+}
+.div2 i {
+  color:#f76300;
+  position: relative;
+  top: 25px;
+  left: 25px;
+}
+.div2 p {
+  
+  position: relative;
+  top: 20px;
+  left: 30px;
+}
+
+
+
+
+
+
+

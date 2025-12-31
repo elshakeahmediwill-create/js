@@ -1,0 +1,79 @@
+*{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 0;
+    margin: 0;
+}
+body{
+    background-image:linear-gradient(to right, #01022d,black);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.ahmed{
+    width: 80%;
+    height: 80%;
+    background-image:linear-gradient(to right, #01022dfb 25%, #000000af),url(الاهرامات.png);
+    background-size: 100% 100%;
+}
+.ahmed:hover{
+    background-image:linear-gradient(to right, #01022dfb 25%, transparent),url(الاهرامات.png);
+}
+header{
+    justify-content: space-around;
+    display: flex;
+    align-items: center;
+}
+a{
+    color: white;
+    text-decoration: none;
+}
+.a{
+    font-size: 32px;
+    text-transform:uppercase ;
+}
+ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    width: 60%;
+}
+ul  a{
+    border-bottom: 2px solid transparent;
+}
+ul  a:hover{
+    border-bottom: 2px solid white;
+    color: #ecf007;
+}
+.aa{
+    width: 50%;
+    margin-top: 50px;
+    padding: 30px;
+    color: white;
+}
+h2{
+    text-transform: uppercase;
+    font-size: 100px;
+}
+p{
+    letter-spacing: 2px;
+    width: 350px;
+    padding: 20px 0;
+}
+button{
+    font-size: 20px;
+    padding: 6px 10px;
+    border-radius: 10px;
+    border: 2px solid transparent;
+
+}
+button:hover{
+    background-color: transparent;
+    color: wheat;
+    border: 2px solid white;
+}
+.a:hover{
+    color: rgba(0, 0, 255, 0.158);
+    
+}
+

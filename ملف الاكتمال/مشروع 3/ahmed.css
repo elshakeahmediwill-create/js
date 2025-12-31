@@ -1,0 +1,91 @@
+body{
+    background: #100;
+    
+ 
+}
+.aa{
+    width: 100px;
+    height: 100px;
+    background: hsl(0799999999999999977797979, 100%, 50%);
+    animation: ahmed 9s linear 1s infinite normal both;
+}
+@keyframes ahmed{
+    0%{
+        translate: 0 0;
+        rotate: 0;
+        background:  hsl(0799999999999999977797979, 100%, 50%);;
+        
+    }
+    25%{
+        translate: 0 520px;
+        rotate: 90deg;
+        background: aqua;
+    }
+    50%{ 
+        translate:1200px 500px;
+        rotate: 180deg;
+        background: chartreuse;
+    }
+    75%{
+        translate:1200px 0 ;
+        rotate: 270deg;
+        background: chocolate;
+    }
+    100%{
+        translate: 0 0;
+        rotate: 360deg;
+        background: hsl(hue, saturation, lightness);
+    }
+}
+.a{
+    width: 100px;
+    height: 100px;
+    background: hsl(0799999999999999977797979, 100%, 50%);
+    animation:bb 9s linear 1s infinite reverse both;
+}
+
+@keyframes bb{
+    0%{
+        translate: 0px -200px;
+        rotate: 0;
+        background:  hsl(24, 77%, 43%);;  
+    }
+    25%{
+        translate: 0 420px;
+        rotate: 90deg;
+        background: aqua;
+    }
+    50%{ 
+        translate:1200px 400px;
+        rotate: 180deg;
+        background: rgb(2, 56, 107);
+    }
+    75%{
+        translate:1200px -100px;
+        rotate: 270deg;
+        background: chocolate;
+    }
+    100%{
+        translate: 0 -170px;
+        rotate: 360deg;
+        background: red;
+    }
+}
+.rr{  width: 300px;
+    height: 300px;
+
+margin-left: 500px;
+    margin-top: -50px;
+}
+.rr img{ width: 300px;
+    height: 300px;
+    animation: cc 9s linear 1s infinite normal both;
+    border-radius:50%;}
+    @keyframes cc{
+        0%{
+            rotate: 0;
+
+        }
+        100%{rotate: 360deg;}
+
+    }

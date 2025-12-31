@@ -1,0 +1,119 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+.aa{
+    height: 1000px;
+    width: 100%;
+    position: relative;
+    background:url(../../صور/er5mtsla.png) ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.aa .bb{
+    height: 860px;
+    width: 75%;
+    padding: 0 20px;
+    background-color: rgba(255, 255, 255, 0.1);
+    z-index: 10;
+    border: 4px solid rgba(255, 255, 255, 0.7);
+    border-radius: 20px;
+    display: flex;
+    backdrop-filter: blur(4px);
+    box-shadow: -15px 17px 17px rgba(10, 10, 10, 0.15);
+
+}
+.aa::after{
+    content: '';
+    position: absolute;
+    height: 300px;
+    width: 300px;
+    background: #c1d9fb;
+    transform: translate(490px,150px);
+    border-radius: 50px;
+}
+.aa .bb nav{
+    height: 7%;
+    width: 95%;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 15px;
+    padding: 20px;
+}
+.aa .bb nav ul li{
+    display: inline-block;
+    padding: 0 20px;
+}
+.aa .bb nav ul li a{
+    text-decoration: none;
+    font-size: 14px;
+    color: black;
+    transition: 0.3s;
+}
+.aa .bb nav ul li a :hover{
+    color: aqua;
+}
+nav .pp{
+    font-size: 35px;
+    color:black; 
+    font-weight: bold;
+    margin-top: 5px;
+    margin-left: 30px;
+    text-decoration: none;
+}
+.aa .bb .cc{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;margin-top: 8%;
+    padding-left: 80px;
+}
+.aa .bb .cc .dd{
+    position: relative;
+    width: 40%;
+}
+.aa .dd h1{
+    margin-bottom: 20px;
+    font-size: 50px;
+    font-weight: bold;
+    color: black;
+}
+.aa .dd h3{
+    font-size: 24px;
+    color: blueviolet;
+    margin-bottom: 10px;
+}
+.aa .dd h2{
+    font-size: 18px;
+    color: rgba(191, 224, 7, 0.884);
+}
+.aa .dd .ee{
+    padding: 15px 20px;
+    background-color: rgb(125, 10, 233);
+    border: 1px solid  rgb(125, 10, 233);
+    color: #d5ddd6;
+    border-radius: 5px;
+    font-weight: 500;
+    text-decoration: none;
+    transition: 0.3s;
+} 
+.aa .dd .ee:hover{
+    background-color: #fff;
+    color: blueviolet;
+}
+.aa .ff{
+    width: 300px;
+    margin-right: 50px;
+    margin-top: 160px;
+}
+.aa .ff img{
+    width: 300px;
+    height: 300px;
+    border-radius:10%;
+}

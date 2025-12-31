@@ -1,0 +1,1259 @@
+/* Reset بسيط و box-sizing */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+/* الصفحة كاملة */
+body {
+  display: flex;
+  height: 100vh;
+  overflow: hidden;
+  background-color: #e9f1ed4d;
+  color: #111;
+  direction: rtl;
+  padding-top: 10px;
+}
+
+/* ===== الشريط الجانبي ===== */
+.sidebar {
+  width: 230px;
+  background-color: #fff;
+  border-left: 1px solid #e6e9ee;
+  padding: 22px;
+  overflow-y: auto;
+  box-shadow: 0 6px 18px rgba(20, 20, 50, 0.04);
+}
+.sidebar .q{
+  width: 30px;
+  height: 30px;
+ 
+}
+.sidebar a{
+ font-size: 18px;
+  font-weight: 900;
+}
+.sidebar h1 {
+  margin-bottom: 18px;
+  font-size: 52px;
+  font-weight: 900;
+  display: inline-block;
+}
+.sidebar h3{
+position: relative;
+bottom: 20px;
+right: 60px;
+color: #000000a4;
+
+}
+
+.menu a {
+  display: block;
+  color: #333;
+  text-decoration: none;
+  padding: 10px 14px;
+  border-radius: 10px;
+  margin-bottom: 8px;
+  transition: background 0.2s, color 0.2s;
+  font-weight: 500;
+}
+
+
+.menu a.active {
+  background-color: #cbd5f361;
+  color: #3b52e5;
+}
+
+/* ===== المحتوى الرئيسي ===== */
+.main-content {
+  flex: 1;
+  overflow-y: auto;
+  padding: 22px 36px;
+  
+}
+
+/* الهيدر */
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 22px;
+  border-radius: 20px;
+  border: #11111113 solid 1px;
+  height: 120px;
+  box-shadow: 1px 1px 2px rgba(10, 10, 10, 0.102);
+  padding: 20px;
+
+}
+
+.trainer-block {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-left: auto; /* يدفع البلوك لليمين داخل الهيدر */
+  padding: 6px 10px;
+  border-radius: 8px;
+}
+
+.trainer-img {
+  width: 55px;
+  height: 55px;
+  border-radius: 8px; /* أو 50% لو عايزها دائرية */
+  object-fit: cover;
+  background-color: blue;
+  padding: 15px;
+  border-radius: 15px;
+  box-shadow: 1px 1px 2px rgb(0, 140, 255);
+  margin-left: 10px;
+}
+
+.trainer-texts {
+  display: flex;
+  flex-direction: column;
+  line-height: 1;
+  
+}
+
+.trainer-title {
+  font-weight: 900;
+  font-size: 42px; /* "مدرب" بخط كبير */
+}
+
+.trainer-sub {
+  font-size: 16px; /* الكلمتين بخط صغير */
+  color: #666;
+  font-weight: 550;
+}
+
+
+/* العنصر الأخضر (badge) */
+.header .w {
+  background-color:rgba(146, 234, 184, 0.101); /* أخضر */
+  color: rgb(14, 155, 14);
+  font-weight: 500;
+  border-radius: 6px;
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 37px;
+  width: 80px;
+  padding: 10px;
+  border-radius: 10px;
+  border:#16a34a1a solid 1px;
+  
+}
+.header .wq{
+    font-size: 30px;
+    color: rgb(25, 239, 25);
+    margin-bottom: 5px ;
+    margin-left: 5px;
+}
+
+
+.images-container {
+
+  display: flex;
+  gap: 10px;
+   margin-left:10px;
+   padding-right: 60px;
+   position: relative;      /* علشان العلامة تتثبت بالنسبة للصورة */
+  display: inline-block;
+
+  ;}
+
+
+.icon-img {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;  /* لو تحب تعملها دائرية */
+  cursor: pointer;
+  padding: 5px;
+  border-radius: 10px;
+  border: #11111117 solid 1px;
+  margin-left:5px;
+}
+
+
+.badge {
+  position: absolute;
+  top: -6px;               /* مكان العلامة بالنسبة لأعلى الصورة */
+  right: 100px;             /* مكانها ناحية اليمين */
+  background-color: #ff1900; /* اللون الأحمر أو أي لون تحبه */
+  color: white;
+  font-size: 13px;
+  font-weight: bold;
+  border-radius: 50%;
+  padding: 2px 5px 0;
+  line-height: 1;
+  min-width: 16px;
+  text-align: center;
+  box-shadow: 0 0 3px rgba(0,0,0,0.2); /* لمسة ظل خفيفة */
+}
+
+.icon-img:hover {
+  transform: scale(1.1); /* تكبير بسيط عند المرور */
+  transition: transform 0.2s;
+}
+
+
+.header h1 {
+  font-size: 22px;
+  font-weight: 700;
+  color: #0b2b4a;
+}
+
+.header .user {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  border:#41444a34 solid 1px;
+  padding: 10px 10px;
+  border-radius: 10px;
+  width: 150px;
+  height: 60px;
+  box-shadow: 2px 2px 3px rgba(10, 10, 10, 0.102);
+}
+
+.header .user img {
+  width: 44px;
+  height: 44px;
+  border-radius: 30%;
+  object-fit: cover;
+  box-shadow: 0 4px 12px rgba(8, 25, 60, 0.06);
+}
+.header .user .q{
+    font-size: 15px;
+    color: #11111189;
+    font-weight: 500;
+}
+
+/* ===== البطاقات ===== */
+.cards {
+  display: flex;
+  gap: 28px;
+  margin-bottom: 38px;
+  margin-top: 50px;
+}
+
+.car {
+  flex: 1;
+  background: #fff;
+  border-radius: 14px;
+  box-shadow: 1px 1px 1px rgba(15, 15, 16, 0.192);
+  border: #33333320 solid 1px;
+  max-width: 400px;
+  height: 200px;
+  padding: 40px 40px;
+  
+  
+  
+}
+
+.car h3 {
+  color: #55585e;
+  margin-bottom: 8px;
+  font-size: 16px;
+  font-weight: 900;
+}
+
+.car p {
+   font-size: 32px;
+   font-weight: 900;
+  margin-bottom: 6px;
+}
+
+
+.up { color: #16a34a; font-size: 20px; }     /* أخضر */
+.down { color: #ef4444;font-size: 20px; }   /* أحمر */
+
+
+
+
+
+.container {
+  display: flex;
+  gap: 25px;
+  flex-direction: column;
+   width: 100%;
+ 
+}
+
+
+
+/* اليمين */
+.right-section {
+  width: 35%;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  height: 800px;
+  position: relative;
+  bottom: 10px;
+}
+
+/* الأنشطة */
+.activities-box {
+  background: #fff;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.07);
+  height: 380px;
+
+}
+
+.activities-box h3 {
+  margin-bottom: 30px;
+  font-weight: 700;
+}
+
+.activity {
+  border-radius: 10px;
+  padding: 10px;
+  margin-bottom: 15px;
+  background-color: rgba(127, 172, 255, 0.137);
+  height: 100px;
+  
+}
+.activity.n{
+box-shadow: -4px  0px 1px rgba(0, 72, 255, 0.831);
+
+}
+.activity.v{
+box-shadow: -4px  0px 1px rgba(2, 200, 45, 0.831);
+}
+
+.activity .title{
+  font-weight: 600;
+  position: relative;
+  bottom: 18px;
+  right: 10px;
+
+}
+
+.activity .desc {
+  color: #1e1c1c;
+  font-size: 14px;
+  position: relative;
+  bottom: 20px;
+}
+.activity .mo{
+  color: blue;
+  position: relative;
+  text-align: end;
+  bottom: 15px;
+  right: 180px;
+  
+}
+.activity .mo.v{
+color: rgba(11, 121, 55, 0.755);
+position: relative;
+right: 200px;
+ 
+}
+.activity .bn{
+  width: 35px;
+  height: 35px;
+  display:inline-block;
+  position: relative;
+   border-radius: 30px;
+  padding: 8px;
+  
+}
+.activity .bn.n{
+  background-color: #1874d018;
+}
+.activity .bn.v{
+  background-color: #18d08618;
+}
+
+.activity p{
+  display: inline-block;
+  position: relative;
+  bottom: 10px;
+}
+.activity .desc{
+  margin-top: 5px;
+  color: #1a1a1b92;
+  margin-right: 40px;
+}
+.activities-box hr{
+  background-color: #1011100c;
+  height: 1px;
+  border: none;
+}
+
+.view-all {
+  color: #007bff;
+  text-align: center;
+  margin-top: 20px;
+  cursor: pointer;
+  font-weight: 400;
+}
+
+/* الفواتير */
+.bills-box {
+  background: #fff;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.07);
+  
+}
+
+.bills-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.bills-header .view {
+  cursor: pointer;
+}
+
+.total {
+  margin: 10px 0 5px;
+  font-size: 32px;
+  font-weight: 600;
+  text-align: center;
+}
+
+.subtitle {
+  color: #777;
+  font-size: 15px;
+  text-align: center;
+}
+
+.bills-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 15px;
+  margin-top: 15px;
+}
+
+.bill-item {
+  background: #f8f9fc;
+  border-radius: 10px;
+  padding: 15px;
+  text-align: center;
+}
+.bill-item img{
+  width: 20px;
+  height: 20px;}
+
+.bill-item .nb{
+color: #333333b2;
+}
+.bill-item .nn{
+  font-size: 18px;
+  font-weight: 400;
+}
+.bill-item .i{
+  font-size: 12px;
+}
+.bill-item .f{
+  color: rgb(228, 42, 42);
+}
+.bill-item .x{
+  color: rgb(242, 80, 21);
+}
+
+.bill-item .xx{
+  color: #16a34a;
+}
+.bill-item .xxx{
+  color: #00000079;
+}
+
+
+.transactions-wrapper {
+  clear: both;
+  width: 70%;
+  display: flex;
+  position: relative;
+  bottom: 810px;
+  right: 450px;
+}
+
+
+
+
+
+
+
+.transactions-container {
+  background: #fff;
+  border-radius: 16px;
+ 
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+  width: 850px;
+  margin: auto;
+}
+
+.header.q{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100px;
+  box-shadow: none;
+  
+}
+
+.header h2 {
+  margin: 0;
+  font-size: 22px;
+}
+
+.header a {
+  color: #888;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.transactions-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.transactions-table thead {
+  background: #fafafa;
+}
+
+.transactions-table th {
+  text-align: right;
+  padding: 10px;
+  color: #777;
+  font-size: 14px;
+}
+
+.transactions-table td {
+  padding: 14px 10px;
+  border-bottom: 1px solid #eee;
+  vertical-align: middle;
+}
+
+.user-info {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.user-info img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.user-info h4 {
+  margin: 0;
+  font-size: 15px;
+}
+
+.user-info p {
+  margin: 0;
+  color: #888;
+  font-size: 13px;
+}
+
+/* Tags */
+.tag {
+  padding: 4px 10px;
+  border-radius: 12px;
+  font-size: 13px;
+}
+
+.tag.income,.ss,.aasss{ background: #cdefd0; color: #5caf6b; 
+ padding: 5px 10px;}
+.tag.food { background: #ffe9d6; color: #b46924; }
+.tag.shop,.ass { background: #e8ecff; color: #1d27e1; }
+.tag.s{background: #e8d9ea; color: #9724b4;}
+.tag.sss{background: #ead9d9; color: #b42b24;}
+.tag.aass{background: #d9eae8; color: #24b48b;}
+
+
+
+
+/* Status */
+.status {
+  font-weight: 500;
+  border-radius: 10px;
+  padding: 4px 8px;
+  font-size: 13px;
+}
+
+.status.complete { background: #e4f8e9; color: #2d8a3e; }
+.status.complete.d { background: #f0dcbd; color: #8a6e2d; }
+.status.pending { background: #fff7e3; color: #c29500; }
+
+/* Amount */
+.amount.plus { color: #129e33; font-weight: bold; }
+
+
+
+
+
+
+
+
+
+
+/* فصل الداشبورد عن باقي الصفحة */
+.dashboard {
+  width: 100%;
+ display: flex;
+  gap: 5px;
+  justify-content: space-between;
+  align-items: flex-start;
+ /* مسافة كبيرة تحت كل اللي فوقه */
+  
+  background: #f9f9f9;
+  border-top: 2px solid #ddd;
+  clear: both;
+  box-sizing: border-box;
+  position: relative;
+  bottom: 800px;
+  
+}
+
+
+
+/* الأعمدة */
+.col {
+  background: #fff;
+  border-radius: 14px;
+  padding: 20px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  height: 380px;
+}
+
+/* العمود الأيمن */
+.budget-col {
+  width: 330px;
+  height: 750px;
+  border-radius: 10px;
+  border: 1px solid rgba(0, 0, 0, 0.17);
+  box-shadow: 1px 1px 2px black;
+}
+
+.budget-col h2 {
+  color: #000000cd;
+  font-size: 16px;
+}
+.budget-col .nm {
+  color: #0000005a;
+  font-size: 16px;
+  text-align: end; 
+  position: relative;
+  bottom: 20px;
+}
+
+.account-summary {
+  border: 1px solid #10b98133;
+  border-radius: 10px;
+  padding: 12px;
+  margin-bottom: 15px;
+  height: 140px;
+  background-color: #9db2fd1f;
+}
+.account-summary h3 {
+  margin: 0;
+  color: #535fdc;
+}
+.account-summary h2 {
+  
+  color: #131378ef;
+  font-weight: 900;
+  font-size: 28px;
+}
+
+.account-summary .z {
+  color: #151516c7;
+  
+  position: relative;
+  top: 10px;
+}
+.account-summary .v {
+  
+  color: #0f0f109e;
+  text-align: end;
+  position: relative;
+  bottom: 70px;
+  left: 30px;
+}
+.account-summary h5 {
+  color: #0d6339;
+  text-align: end;
+  position: relative;
+  bottom: 55px;
+  left: 5px;
+  font-size: 18px;
+  font-weight: 500;
+}
+.account-summary .percen{
+  position: relative;
+  right: 300px;
+  bottom: 45px;
+}
+
+
+.budget-card {
+  margin-bottom: 18px;
+  position: relative;
+  top: 5px;
+
+  padding: 5px;
+  border-radius: 10px;
+  position: relative;
+  border: 1px solid rgba(0, 0, 0, 0.094);
+  height: 105px;
+}
+.wq.c{
+  position: relative;
+  right: 45px;
+  bottom: 25px;
+}
+.wq.b{
+  text-align: end;
+  position: relative;
+  bottom: 30px;
+}
+ .budget-card .im.i{
+  position: relative;
+  top: 10px;
+  background-color: rgba(234, 67, 6, 0.076);
+ }
+.budget-card .im.ii{
+  position: relative;
+  top: 10px;
+  background-color: rgba(246, 155, 155, 0.472);
+  
+ }
+.budget-card .im.iii{
+  position: relative;
+  top: 10px;
+  background-color: rgba(243, 80, 210, 0.238);
+  
+ }
+
+ .budget-card p{
+  position: relative;
+  right: 45px; 
+  bottom: 40px;
+  
+ }
+
+
+.budget-card h3 {
+  margin: 0 0 8px;
+  color: #374151;
+}
+
+.progress-bar {
+  background: #e5e7eb;
+  border-radius: 10px;
+  height: 8px;
+  overflow: hidden;
+  position: relative;
+  bottom: 20px;
+  
+}
+.progres-bar{
+  background: #125ef6;
+  border-radius: 10px;
+  height: 8px;
+  overflow: hidden;
+  position: relative;
+  bottom: 40px;
+  
+}
+
+.progress {
+  height: 100%;
+  
+  border-radius: 10px;
+  transition: width 0.4s ease;
+
+  
+}
+.p60 { width: 82.5%; background-color: rgb(78, 78, 228);}
+.p80 { width: 50%; background-color: orangered; }
+.p40 { width: 100%; background-color: #ea2020d7;}
+.p20 { width: 80%; background-color: #eb3ee2;}
+.p0 { width: 86%;background-color: rgb(20, 179, 49); }
+
+.percent {
+  position:absolute ;
+  top: 60px;
+  left: 15px;
+  font-size: 13px;
+  color: #0e0e0e70;
+  padding: 5px 10px;
+  background-color: rgba(0, 0, 0, 0.003);
+  border-radius: 20px;
+}
+
+/* العمود الأوسط */
+
+
+
+
+.oi {
+  display: flex;
+flex-direction: column;
+  gap: 20px;
+width: 330px;
+
+}
+
+/* ===== كل قسم رسم بياني ===== */
+.chart-col {
+  background: white;
+  border-radius: 15px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  padding: 50px;
+  height: 350px;
+}
+
+.chart-col h4 {
+  color: #333;
+  text-align: end;
+  position: relative;
+  bottom: 40px;
+  right: 20px;
+  font-size: 16px;
+
+}
+.chart-col h3{
+position: relative;
+left: 10px;
+bottom: 20px;
+}
+.chart-col .hg{
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  right: 110px;
+  gap: 50px;
+  
+  
+}
+.chart-col .gh{
+  width: 15px ;
+  height: 15px;
+  position: relative;
+  left: 5px;
+
+}
+.chart-col .gh.g{
+background-color: #1ab47c;
+}
+.chart-col .gh.h{
+  background-color: rgb(232, 46, 46);
+}
+.chart-col .hh{
+  display: inline-block;
+}
+.chart-col p{
+  position: relative;
+  bottom: 17px;
+  right: 20px;
+}
+
+
+.chart-col p{
+  position: relative;
+  
+
+}
+/* ===== الحاوية ===== */
+.chart-container {
+  display: flex;
+  position: relative;
+  bottom: 90px;
+}
+
+/* ===== شكل الرسم ===== */
+.chart {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  height: 180px;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+}
+
+.chart li {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  top: 100px;
+}
+
+.chart span {
+  margin-top: 8px;
+  color: #666;
+  font-size: 14px;
+}
+
+/* ===== الأعمدة ===== */
+.bar {
+  width: 20px;
+  border-radius: 6px;
+  
+}
+
+.bar:hover, .x:hover {
+  opacity: 0.8;
+  transform: scale(1.05);
+}
+
+
+/* ===== ارتفاع وألوان الأعمدة ===== */
+  /* الدخل */
+
+.bar { height: 120px; background-color: #17966c; }
+
+.chart .x{
+  width: 20px;
+  height: 50px; 
+  background-color: #f74747;
+position: absolute;
+right: 22px;
+top: 70px;
+border-radius: 6px;
+}
+.chart .x.c{
+  height: 40px;
+  position: absolute;
+  top: 80px;
+}
+
+
+
+
+/* ===== ملخص الحساب ===== */
+
+.card {
+  background: #fff;
+  border-radius: 20px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.05);
+  padding: 20px;
+  width: 500px;
+  min-height: 380px;
+}
+
+.card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 10px;
+  margin-bottom: 15px;
+}
+
+.card-header h2 {
+  font-size: 18px;
+  margin: 0;
+}
+
+.card-header .details {
+  font-size: 14px;
+  color: #4e4848;
+  text-decoration: none;
+}
+
+/* قائمة الحسابات */
+.accounts {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  gap: 10px;
+}
+
+/* كل حساب */
+.account {
+  background: #fafafa;
+  border: 1px solid #f1f1f1;
+  border-radius: 12px;
+  padding: 14px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 70px;
+}
+
+.account-meta {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.account-title {
+  font-weight: bold;
+  font-size: 15px;
+  position: relative;
+  right: 50px;
+  bottom: 30px;
+  
+}
+
+.account-sub {
+  font-size: 13px;
+  color: #777;
+   position: relative;
+  right: 50px;
+  bottom: 30px;
+}
+
+/* الجهة اليمنى */
+.account-right {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.amount {
+  font-weight: bold;
+  font-size: 17px;
+}
+.amount.negative{
+  color: red;
+}
+
+.immi img{
+  width: 40px;
+  height: 40px;
+  position: relative;
+  top: 20px;
+  padding: 8px;
+  border-radius: 10px;
+}
+.immi.m img{
+  background-color: #3766f412;
+}
+.immi.mm img{
+  background-color: #13ce5e1b;
+}
+.immi.mmm img{
+  background-color: #f137f412;
+}
+
+/* العمود الأيسر */
+.payment-col {
+  position: relative;
+  right: 90px;
+  width: 350px;
+ perspective: 1000px;
+  height: 750px;
+}
+
+.payment-col h2 {
+  font-size: 28px;
+  padding: 5px;
+color: #201f1fe1;
+  
+}
+.payment-col h4{
+  text-align: left;
+  position: relative;
+  bottom: 40px;
+  color: #00000098;
+
+}
+
+.payment-card {
+  border: 1px solid #10b98133;
+  border-radius: 12px;
+  padding: 12px 15px;
+  margin-bottom: 15px;
+  height: 250px;
+  position: relative;
+  transform-style: preserve-3d;
+  transition: transform 1s ease; /* سرعة ونعومة الحركة */
+  
+   
+}
+.payment-card * {
+  backface-visibility: hidden;}
+
+.payment-card.a{
+background-color: rgb(5, 26, 133);
+}
+.payment-card.b{
+background-color:rgb(207, 8, 61) ;
+}
+.payment-card.c{
+  background-color: rgb(32, 32, 208);
+}
+.card-heade {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 20px;
+  position: relative;
+
+}
+
+.icon {
+  height: 40px;
+  width: 60px;
+  background-color: #ffffff31;
+  border-radius: 10px;
+}
+.ico{
+  height: 22px;
+  width: 35px;
+  background-color: #ffffff70;
+  border-radius: 8px;
+  position: relative;
+  top: 8px;
+  right: 10px;
+}
+.payment-card .imh img{
+  width: 50px;
+  height: 50px;
+  position: relative;
+}
+.payment-card .imh.a img {right: 20px;
+}
+.payment-card .imh.b img {right: 40px;
+}
+.payment-card .imh.c img {right: 150px;
+
+}
+.payment-card .tex{
+  position: absolute;
+  color: white;
+  font-size: 18px;
+  top: 5px;
+  right: 240px;
+  background-color: #f9f3f35f;
+  border-radius: 20px;
+  padding: 5px;
+}
+
+.card-number {
+  color: #d5c8d8;
+  font-weight: 900;
+  font-size: 28px;
+}
+
+.card-details p {
+  padding-top: 5px ;
+  margin: 0px 0 0;
+  font-size: 16px;
+  color: rgba(255, 255, 255, 0.909);
+}
+
+.card-details .ahm{
+  text-align: left;
+  position: relative;
+  left: 10px;
+  bottom: 50px;
+  color: rgba(255, 255, 255, 0.881);
+}
+.card-details .ahm.e{
+   margin: 35px -20px;
+   
+}
+
+.card-details .ahn{
+text-align: end;
+  position: relative;
+  bottom: 50px;
+  
+  font-size: 18px;
+  font-weight: 800;
+}
+.card-details .a.e{
+  color: rgb(47, 255, 57);
+  position: relative;
+
+
+  bottom: 30px;
+  right: 120px;
+}
+.card-details .a{
+  text-align: left;
+  position: relative;
+  bottom: 20px;
+  right: 120px;
+  font-size: 18px;
+  font-weight: 800;
+}
+
+.im{
+  width: 35px;
+  height: 35px;
+  border-radius: 10px;
+  padding: 5px;
+}
+
+
+ 
+
+
+/* الجزء الداخلى اللى هيتقلب */
+.payment-card .inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transition: transform 1s ease;
+  transform-style: preserve-3d;
+    border-radius: 12px;
+   
+}
+
+/* حركة اللفة */
+.payment-card:hover {
+  transform: rotateY(180deg);
+  
+}
+
+/* الوجهين */
+.front, .back {
+  position: absolute;
+  
+  backface-visibility: hidden;
+  border-radius: 12px;
+  
+  background-clip: padding-box;
+}
+
+
+/* الوجه الخلفى */
+.back {
+  background-color: rgb(4, 4, 31);
+  color: white;
+  transform: rotateY(180deg);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+   transform: rotateY(180deg);
+   bottom: -15px;
+   right: -15px;
+   width:310px;
+  height: 250px;
+}
+
+/* شريط مغناطيسى للكارت */
+.stripe {
+  width: 100%;
+  height: 40px;
+  background-color: #00000080;
+  margin-bottom: 20px;
+  border-radius: 5px;
+}
+
+/* نصوص المعلومات */
+.info {
+  color: #fff;
+  font-size: 16px;
+  margin: 5px 0;
+}

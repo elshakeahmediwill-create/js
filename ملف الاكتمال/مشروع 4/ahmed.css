@@ -1,0 +1,114 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+body{
+    background: linear-gradient(#000, #444);
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.ahmed{
+    width: 80%;
+    height: 80%;
+    background: rgba(255, 255, 255,0.2);
+border-radius: 20px;
+}
+body::after{content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background: rgba(240, 1, 1, 0.671);
+    clip-path:circle(35% at right 70%) ;
+    z-index: -2;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    margin: auto;
+    padding: 20px 0; 
+}
+.pp{
+    color: #fff;
+    text-decoration: none;
+    font-size: 32px;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    font-weight: 700;
+}
+nav ul li{
+    display: inline-block;
+    margin: 0 8px;
+
+}
+nav ul li a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 500;
+}
+nav ul li a:hover{
+    color: rgba(89, 0, 255, 0.479);
+}
+.zoo{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    margin: auto;
+    height: 100%;
+    overflow: hidden;
+    
+}
+.zoo .text{
+    color: #fff;
+    width: 40%;
+}
+.zoo .text h2{
+    font-size: 40px;
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+p{
+    font-size: 18px;
+    line-height: 25px;
+    margin: 10px 0;
+    letter-spacing: 1px;
+}
+.imeg{
+    width:400px;
+    z-index: -1;
+    
+
+}
+img{
+    width: 500px;
+height: 300px;
+    clip-path:circle(50% at left  )  ;border-radius:0%;
+}
+@media (min-width:950px) and (max-width:1150px){
+    
+img{ width: 300px;}
+}
+@media(max-width :950px){
+    .pp ,nav{
+        flex-direction: column;
+        justify-content: center;
+
+    }
+     .zoo .text{
+        width: 100%;
+}
+body::after{
+    clip-path: circle(30% at bottom);
+} img{width: 90%;
+    border-radius:100%;
+
+}
+}
